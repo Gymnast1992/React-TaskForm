@@ -10,7 +10,7 @@ const TaskForm = () => {
   });
 
   const handleChange = (e) => {
-      const {name, value} = e.target;
+      const { name, value } = e.target;
 
       setTaskData(prev => {
         return {...prev, [name]: value}
@@ -20,7 +20,8 @@ const TaskForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(taskData);
-  }
+  };
+
   return (
     <header className='app_header'>
         <form onSubmit={handleSubmit}>
