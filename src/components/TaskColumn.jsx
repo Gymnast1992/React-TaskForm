@@ -11,8 +11,16 @@ const TaskColumn = ({title, icon, tasks, status}) => {
             </h2>
 
             {
-                tasks.map((task, index) => task.status === status && 
-            <TaskCard  key={index} title={task.task} tags={task.tags} />)
+                tasks.map(
+                    (task, index) => 
+                        task.status === status && 
+                            <TaskCard  
+                                key={index} 
+                                title={task.task} 
+                                tags={task.tags}
+                                handleDelete={handleDelete} 
+                                index={index}
+                            />)
             }
         </section>
     )
