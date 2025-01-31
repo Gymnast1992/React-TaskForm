@@ -7,6 +7,7 @@ import todoIcon from "./assets/Screenshot 2025-01-01 at 15.09.35.png";
 import doingIcon from "./assets/Screenshot 2025-01-01 at 15.09.35.png";
 import doneIcon from "./assets/Screenshot 2025-01-01 at 15.09.35.png";
 
+
 const oldTasks = localStorage.getItem("tasks")
 console.log(oldTasks);
 
